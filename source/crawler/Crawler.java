@@ -1,18 +1,18 @@
 package crawler;
 
 public class Crawler {
-    // Thu thập thông tin (khá lâu khoảng vài ngày)
+    // Craw data
     public static void crawler() throws InterruptedException {
         String filePath = "resource\\Hashtags.csv";
-        // Pha thứ nhất : Tìm kol
+        // search kol
         SearchKol searchKol = new SearchKol(filePath);
         searchKol.search();
         searchKol.writeToCsv("resource\\ListAccount.csv",
                 "resource\\FollowingAccount.csv",
                 "resource\\Interaction.csv");
-        // Pha thứ 2 : Tìm sự tương tác giữa các kol
+        // find interaction
         CollectInteraction collectInteraction = new CollectInteraction(filePath);
-        collectInteraction.buildKolName("esource\\ListAccount.csv", "A");
+        collectInteraction.buildKolName("resource\\ListAccount.csv", "A");
         collectInteraction.buildKolName("resource\\FollowingAccount.csv", "A");
         collectInteraction.buildKolName("resource\\FollowingAccount.csv", "B");
         collectInteraction.search();
