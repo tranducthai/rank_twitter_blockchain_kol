@@ -2,7 +2,7 @@ Java Project:
 
 -Crawl Data về các Kol Blockchain trên Twitter (Follow,Comment,Post,Tweet) bằng Selenium
 
--Sử dụng thuật toán PageRank Algorithm để xếp hạng
+-Sử dụng thuật toán PageRank để xếp hạng
 
 Data craw:
 
